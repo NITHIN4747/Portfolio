@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --sidebgColor: #0e1722;
     --themeColor: rgb(45, 215, 192);
     --iconbgColor: #202647;
@@ -16,7 +16,7 @@
     --bgColor: #f7f7f7;
 }
 
-header{
+header {
     height: 100vh;
     width: 300px;
     padding: 15px 30px;
@@ -112,11 +112,11 @@ hr {
 header .footer {
     text-align: center;
     background-color: var(--sidebgColor);
-    width: 300px;
+    width: 270px;
     color: lightgrey;
     font-size: 14px;
     letter-spacing: 0.6px;
-    padding: 15px;
+    padding: 1m;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -144,7 +144,7 @@ header .footer p a {
     z-index: 999;
 }
 
-#MenuBtn:hover{
+#MenuBtn:hover {
     background-color: var(--iconbgColor);
 }
 
@@ -167,7 +167,7 @@ header .footer p a {
     left: 0;
 }
 
-.mobile-nav-active .footer{
+.mobile-nav-active .footer {
     left: 0;
 }
 
@@ -178,7 +178,7 @@ main {
 }
 
 @media only screen and (max-width: 1050px) {
-    main{
+    main {
         margin-left: 0;
     }
 }
