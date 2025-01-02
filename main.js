@@ -13,4 +13,4 @@ let typed = new Typed('#auto-input', {
     backSpeed: 90,
     backDelay: 100,
     loop: true,
-})
+}) 

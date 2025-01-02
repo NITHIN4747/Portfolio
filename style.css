@@ -8,6 +8,16 @@
     scroll-behavior: smooth;
 }
 
+hr {
+    border: none; 
+    height: 0px; 
+    background: linear-gradient(to right, #28eada, #f0f0f0, #0debb7); 
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
 :root {
     --sidebgColor: #0e1722;
     --themeColor: rgb(45, 215, 192);
@@ -186,7 +196,7 @@ main {
 #home {
     height: 100vh;
     width: 100%;
-    background-image: url(img/back.jpg);
+    background-image: url(img/back.png);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -635,11 +645,12 @@ main {
     margin-bottom: 15px;
 }
 
-#education .edu-row .edu-cols .my-edu span + p + p {
+#education .edu-row .edu-cols .my-edu ul li {
+    margin: 10px 0;
+    margin-left: 20px;
     color: var(--textColor);
     font-size: 15px;
     font-weight: 500;
-    padding-bottom: 15px;
 }
 
 #education .edu-row .edu-cols .intern-exp {
