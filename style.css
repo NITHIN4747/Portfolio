@@ -267,6 +267,7 @@ main {
 @media only screen and (max-width: 670px) {
     #home {
         padding: 30px;
+        background-image: url(img/back-mobile.jpg);
     }
     #home .home-row h1 {
         font-size: 35px;
