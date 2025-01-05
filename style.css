@@ -196,7 +196,7 @@ main {
 #home {
     height: 100vh;
     width: 100%;
-    background-image: url(img/back.png);
+    background-image: url(img/home.png);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -267,7 +267,7 @@ main {
 @media only screen and (max-width: 670px) {
     #home {
         padding: 30px;
-        background-image: url(img/back-mobile.jpg);
+        background-image: url(img/home-mobile.png);
     }
     #home .home-row h1 {
         font-size: 35px;
