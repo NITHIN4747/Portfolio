@@ -4,7 +4,7 @@ let MenuBtn = document.getElementById('MenuBtn');
 MenuBtn.addEventListener('click', function (e) {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     this.classList.toggle('fa-xmark');
-});
+})
 
 // Close nav bar on option selection or screen click
 document.addEventListener('click', function (e) {
@@ -13,7 +13,7 @@ document.addEventListener('click', function (e) {
         document.querySelector('body').classList.remove('mobile-nav-active');
         MenuBtn.classList.remove('fa-xmark');
     }
-});
+})
 
 // Close nav bar when a nav option is clicked
 document.querySelectorAll('header nav ul li a').forEach(function (navOption) {
@@ -21,7 +21,7 @@ document.querySelectorAll('header nav ul li a').forEach(function (navOption) {
         document.querySelector('body').classList.remove('mobile-nav-active');
         MenuBtn.classList.remove('fa-xmark');
     });
-});
+})
 
 // Typing Effect
 let typed = new Typed('#auto-input', {
