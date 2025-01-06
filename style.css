@@ -459,6 +459,9 @@ main {
     font-weight: 500;
     font-size: 16px;
 }
+.skill-outer-line .skill-inner-line {
+    transition: width 0.5s ease-in-out; /* Adjust the animation duration and timing function */
+}
 
 /* Mobile View */
 @media only screen and (max-width: 700px) {
@@ -527,6 +530,7 @@ main {
     height: 10px;
     background-color: var(--themeColor);
     border-radius: 20px;
+    transition: width 4s ease-in-out;
 }
 
 @media only screen and (max-width: 450px) {
