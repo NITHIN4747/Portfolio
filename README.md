@@ -32,8 +32,8 @@ portfolio-website/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd portfolio-website
+   git clone https://github.com/NITHIN4747/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies**
