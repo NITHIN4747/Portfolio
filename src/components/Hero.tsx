@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
                 }}
               ></div>
               {/* Bouncing photo with glow */}
-              <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-neutral-800 shadow-2xl z-10 flex items-center justify-center bg-neutral-900 animate-bounce-slow-photo shadow-[0_0_40px_10px_rgba(168,85,247,0.3)]">
+              <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-neutral-800 z-10 flex items-center justify-center bg-neutral-900 animate-bounce-slow-photo shadow-[0_0_40px_10px_rgba(168,85,247,0.3)]">
                 <img
                   src="/nithin_pro.png"
                   alt="Nithin Profile"
@@ -120,14 +120,16 @@ const Hero: React.FC = () => {
               </div>
             </div>
             {/* Learn More About Me button below the photo/ring, centered */}
-            <button
-              onClick={scrollToAbout}
-              className="hidden md:flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary transition-colors duration-300 group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary mt-20 bg-transparent border-none shadow-none px-0 py-0 rounded-none"
-              aria-label="Scroll to about section"
-            >
-              <span className="text-sm font-medium">Learn More About Me</span>
-              <ArrowDown className="h-5 w-5 animate-bounce" />
-            </button>
+            {showLearnMore && (
+              <button
+                onClick={scrollToAbout}
+                className="hidden md:flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary transition-colors duration-300 group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary mt-20 bg-transparent border-none shadow-none px-0 py-0 rounded-none"
+                aria-label="Scroll to about section"
+              >
+                <span className="text-sm font-medium">Learn More About Me</span>
+                <ArrowDown className="h-5 w-5 animate-bounce" />
+              </button>
+            )}
           </div>
         </div>
       </div>
