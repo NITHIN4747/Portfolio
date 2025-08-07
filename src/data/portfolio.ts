@@ -1,4 +1,5 @@
 import { Project, Experience, Achievement, Skill, NavItem } from '../types'
+import resumePdf from '../assets/NITHIN_K_RESUME.pdf'
 
 export const personalInfo = {
   name: "Nithin",
@@ -148,6 +149,6 @@ export const socialLinks = {
   github: 'https://github.com/NITHIN4747',
   linkedin: 'https://www.linkedin.com/in/nithink47',
   email: 'nithinofficial47@gmail.com',
-  resume: 'NITHIN_K_RESUME.pdf',
+  resume: resumePdf,
 }
 
