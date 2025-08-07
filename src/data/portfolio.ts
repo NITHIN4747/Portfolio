@@ -148,6 +148,6 @@ export const socialLinks = {
   github: 'https://github.com/NITHIN4747',
   linkedin: 'https://www.linkedin.com/in/nithink47',
   email: 'nithinofficial47@gmail.com',
-  resume: '/NITHIN_K_RESUME.pdf',
+  resume: 'NITHIN_K_RESUME.pdf',
 }
 
