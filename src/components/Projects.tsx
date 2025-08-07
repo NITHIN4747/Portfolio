@@ -22,7 +22,17 @@ const Projects: React.FC = () => {
 
       {/* Project Image */}
       <div className="relative h-48 bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src={project.imageUrl}
+          alt={project.title}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.style.display = 'none';
+            target.nextElementSibling?.classList.remove('hidden');
+          }}
+        />
+        <div className="hidden absolute inset-0 items-center justify-center">
           <div className="text-6xl opacity-20">💻</div>
         </div>
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
@@ -146,8 +156,20 @@ const Projects: React.FC = () => {
 
               <div className="space-y-6">
                 {/* Project Image */}
-                <div className="h-64 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg flex items-center justify-center">
-                  <div className="text-8xl opacity-30">💻</div>
+                <div className="h-64 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg overflow-hidden">
+                  <img
+                    src={selectedProject.imageUrl}
+                    alt={selectedProject.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                  <div className="hidden h-full items-center justify-center">
+                    <div className="text-8xl opacity-30">💻</div>
+                  </div>
                 </div>
 
                 {/* Project Description */}
