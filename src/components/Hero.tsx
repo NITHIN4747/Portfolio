@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
               {/* Bouncing photo with glow */}
               <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-neutral-800 z-10 flex items-center justify-center bg-neutral-900 animate-bounce-slow-photo shadow-[0_0_40px_10px_rgba(168,85,247,0.3)]">
                 <img
-                  src="nithin_pro.png"
+                  src="/nithin_pro.png"
                   alt="Nithin Profile"
                   className="w-full h-full object-cover rounded-full object-center shadow-[inset_0_0_40px_#0008] border-4 border-neutral-900"
                   style={{ boxShadow: '0 0 0 6px #222 inset, 0 2px 16px 0 #0006', objectPosition: 'center 40%' }}
